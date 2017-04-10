@@ -1,0 +1,44 @@
+******************************2017.3.6 afternoon **********************
+
+
+//arm64-v8a
+
+/home/cat/Documents/ndk/android-ndk-r11c/build/core/toolchains/aarch64-linux-android-obfuscator3.6/setup.mk:30: "********************* aarch64 arm64-v8a clang3.6 obfuscator-llvm ***********  "
+
+/home/cat/Documents/ndk/android-ndk-r11c/build/core/toolchains/aarch64-linux-android-obfuscator3.6/setup.mk:37: "LLVM_TOOLCHAIN_PREFIX arm64-v8a  /home/cat/Documents/ndk/android-ndk-r11c/toolchains/obfuscator-llvm /prebuilt/linux-x86_64/bin/"
+
+
+//armeabi 
+
+/home/cat/Documents/ndk/android-ndk-r11c/build/core/toolchains/arm-linux-androideabi-obfuscator3.6/setup.mk:38: " = ========== *tool armeabi  ============= "
+
+/home/cat/Documents/ndk/android-ndk-r11c/build/core/toolchains/arm-linux-androideabi-obfuscator3.6/setup.mk:41: " LLVM_TOOLCHAIN_PREBUILT_ROOT /home/cat/Documents/ndk/android-ndk-r11c/toolchains/obfuscator-llvm/prebuilt/linux-x86_64 "
+
+/home/cat/Documents/ndk/android-ndk-r11c/build/core/toolchains/arm-linux-androideabi-obfuscator3.6/setup.mk:44: " LLVM_TOOLCHAIN_PREFIX /home/cat/Documents/ndk/android-ndk-r11c/toolchains/obfuscator-llvm/prebuilt/linux-x86_64/bin/ "
+
+/home/cat/Documents/ndk/android-ndk-r11c/build/core/toolchains/arm-linux-androideabi-obfuscator3.6/setup.mk:46: " = ======================= "
+
+/home/cat/Documents/ndk/android-ndk-r11c/build/core/toolchains/arm-linux-androideabi-obfuscator3.6/setup.mk:57: " = =======+++++++ target ================ "
+
+/home/cat/Documents/ndk/android-ndk-r11c/build/core/toolchains/arm-linux-androideabi-obfuscator3.6/setup.mk:59: " TARGET_CC /home/cat/Documents/ndk/android-ndk-r11c/toolchains/obfuscator-llvm/prebuilt/linux-x86_64/bin/clang "
+
+/home/cat/Documents/ndk/android-ndk-r11c/build/core/toolchains/arm-linux-androideabi-obfuscator3.6/setup.mk:61: " TARGET_CXX /home/cat/Documents/ndk/android-ndk-r11c/toolchains/obfuscator-llvm/prebuilt/linux-x86_64/bin/clang++ "
+
+/home/cat/Documents/ndk/android-ndk-r11c/build/core/toolchains/arm-linux-androideabi-obfuscator3.6/setup.mk:38: " = ========== *tool armeabi  ============= "
+
+/home/cat/Documents/ndk/android-ndk-r11c/build/core/toolchains/arm-linux-androideabi-obfuscator3.6/setup.mk:41: " LLVM_TOOLCHAIN_PREBUILT_ROOT /home/cat/Documents/ndk/android-ndk-r11c/toolchains/obfuscator-llvm/prebuilt/linux-x86_64 "
+
+/home/cat/Documents/ndk/android-ndk-r11c/build/core/toolchains/arm-linux-androideabi-obfuscator3.6/setup.mk:44: " LLVM_TOOLCHAIN_PREFIX /home/cat/Documents/ndk/android-ndk-r11c/toolchains/obfuscator-llvm/prebuilt/linux-x86_64/bin/ "
+
+/home/cat/Documents/ndk/android-ndk-r11c/build/core/toolchains/arm-linux-androideabi-obfuscator3.6/setup.mk:46: " = ======================= "
+
+/home/cat/Documents/ndk/android-ndk-r11c/build/core/toolchains/arm-linux-androideabi-obfuscator3.6/setup.mk:57: " = =======+++++++ target ================ "
+
+/home/cat/Documents/ndk/android-ndk-r11c/build/core/toolchains/arm-linux-androideabi-obfuscator3.6/setup.mk:59: " TARGET_CC /home/cat/Documents/ndk/android-ndk-r11c/toolchains/obfuscator-llvm/prebuilt/linux-x86_64/bin/clang "
+
+/home/cat/Documents/ndk/android-ndk-r11c/build/core/toolchains/arm-linux-androideabi-obfuscator3.6/setup.mk:61: " TARGET_CXX /home/cat/Documents/ndk/android-ndk-r11c/toolchains/obfuscator-llvm/prebuilt/linux-x86_64/bin/clang++ "
+
+[arm64-v8a] Compile        : demo2 <= demo2.c
+make: execvp: /home/cat/Documents/ndk/android-ndk-r11c/toolchains/obfuscator-llvm: Permission denied
+/home/cat/Documents/ndk/android-ndk-r11c/build/core/build-binary.mk:460: recipe for target 'obj/local/arm64-v8a/objs/demo2/demo2.o' failed
+make: *** [obj/local/arm64-v8a/objs/demo2/demo2.o] Error 127

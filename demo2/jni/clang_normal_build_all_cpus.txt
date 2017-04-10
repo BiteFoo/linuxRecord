@@ -1,0 +1,33 @@
+cat@ubuntu:~/Documents/work/demo2$ ndk-build -B
+
+
+/home/cat/Documents/ndk/android-ndk-r11c/build/core/toolchains/aarch64-linux-android-clang3.6/setup.mk:30: "********************* aarch64-linux-android clang3.6 ***********  "
+/home/cat/Documents/ndk/android-ndk-r11c/build/core/toolchains/aarch64-linux-android-clang3.6/setup.mk:35: "LLVM_TOOLCHAIN_PREFIX  /home/cat/Documents/ndk/android-ndk-r11c/toolchains/llvm/prebuilt/linux-x86_64/bin/"
+
+
+/home/cat/Documents/ndk/android-ndk-r11c/build/core/toolchains/arm-linux-androideabi-clang3.6/setup.mk:36: "++++++toolchain root /home/cat/Documents/ndk/android-ndk-r11c/toolchains//prebuilt/linux-x86_64"
+
+/home/cat/Documents/ndk/android-ndk-r11c/build/core/toolchains/arm-linux-androideabi-clang3.6/setup.mk:36: "++++++toolchain root /home/cat/Documents/ndk/android-ndk-r11c/toolchains//prebuilt/linux-x86_64"
+
+
+[arm64-v8a] Compile        : demo2 <= demo2.c
+[arm64-v8a] SharedLibrary  : libdemo2.so
+[arm64-v8a] Install        : libdemo2.so => libs/arm64-v8a/libdemo2.so
+[x86_64] Compile        : demo2 <= demo2.c
+[x86_64] SharedLibrary  : libdemo2.so
+[x86_64] Install        : libdemo2.so => libs/x86_64/libdemo2.so
+[mips64] Compile        : demo2 <= demo2.c
+[mips64] SharedLibrary  : libdemo2.so
+[mips64] Install        : libdemo2.so => libs/mips64/libdemo2.so
+[armeabi-v7a] Compile thumb  : demo2 <= demo2.c
+[armeabi-v7a] SharedLibrary  : libdemo2.so
+[armeabi-v7a] Install        : libdemo2.so => libs/armeabi-v7a/libdemo2.so
+[armeabi] Compile thumb  : demo2 <= demo2.c
+[armeabi] SharedLibrary  : libdemo2.so
+[armeabi] Install        : libdemo2.so => libs/armeabi/libdemo2.so
+[x86] Compile        : demo2 <= demo2.c
+[x86] SharedLibrary  : libdemo2.so
+[x86] Install        : libdemo2.so => libs/x86/libdemo2.so
+[mips] Compile        : demo2 <= demo2.c
+[mips] SharedLibrary  : libdemo2.so
+[mips] Install        : libdemo2.so => libs/mips/libdemo2.so

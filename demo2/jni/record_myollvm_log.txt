@@ -1,0 +1,36 @@
+Under text is my ollvm build it.That can build armeabi ,armeabi-v7a,x86, x86_64,mips ,mips64  ,excpting target arm64-v8a
+
+*********************
+
+cat@ubuntu:~/Documents/work/demo2$ ndk-build -B
+/home/cat/Documents/ndk/android-ndk-r11c/build/core/build-local.mk:24: "++++++++++++++++++  build-local  ---"
+/home/cat/Documents/ndk/android-ndk-r11c/build/core/add-toolchain.mk:24: "++++++++++++++++++  add-toolchain ---"
+/home/cat/Documents/ndk/android-ndk-r11c/build/core/add-toolchain.mk:24: "++++++++++++++++++  add-toolchain ---"
+/home/cat/Documents/ndk/android-ndk-r11c/build/core/add-toolchain.mk:24: "++++++++++++++++++  add-toolchain ---"
+/home/cat/Documents/ndk/android-ndk-r11c/build/core/add-toolchain.mk:24: "++++++++++++++++++  add-toolchain ---"
+/home/cat/Documents/ndk/android-ndk-r11c/build/core/add-toolchain.mk:24: "++++++++++++++++++  add-toolchain ---"
+/home/cat/Documents/ndk/android-ndk-r11c/build/core/add-toolchain.mk:24: "++++++++++++++++++  add-toolchain ---"
+/home/cat/Documents/ndk/android-ndk-r11c/build/core/add-toolchain.mk:24: "++++++++++++++++++  add-toolchain ---"
+/home/cat/Documents/ndk/android-ndk-r11c/build/core/add-toolchain.mk:24: "++++++++++++++++++  add-toolchain ---"
+/home/cat/Documents/ndk/android-ndk-r11c/build/core/add-toolchain.mk:24: "++++++++++++++++++  add-toolchain ---"
+/home/cat/Documents/ndk/android-ndk-r11c/build/core/add-toolchain.mk:24: "++++++++++++++++++  add-toolchain ---"
+/home/cat/Documents/ndk/android-ndk-r11c/build/core/add-toolchain.mk:24: "++++++++++++++++++  add-toolchain ---"
+/home/cat/Documents/ndk/android-ndk-r11c/build/core/add-toolchain.mk:24: "++++++++++++++++++  add-toolchain ---"
+/home/cat/Documents/ndk/android-ndk-r11c/build/core/add-toolchain.mk:24: "++++++++++++++++++  add-toolchain ---"
+/home/cat/Documents/ndk/android-ndk-r11c/build/core/setup-toolchain.mk:20: "++++++++++++++++++  core  setup ----toolchians 11111  ---"
+/home/cat/Documents/ndk/android-ndk-r11c/build/core/setup-toolchain.mk:28: "== obfuscator3.6 clang3.6 clang3.5 clang3.4 4.9"
+/home/cat/Documents/ndk/android-ndk-r11c/build/core/setup-toolchain.mk:30: "++++++++++++++++++  core  setup ----toolchians  22222---"
+/home/cat/Documents/ndk/android-ndk-r11c/build/core/toolchains/arm-linux-androideabi-clang3.6/setup.mk:36: "++++++toolchain root /home/cat/Documents/ndk/android-ndk-r11c/toolchains//prebuilt/linux-x86_64"
+[armeabi] Compile arm    : demo2 <= demo2.c
+[armeabi] SharedLibrary  : libdemo2.so
+[armeabi] Install        : libdemo2.so => libs/armeabi/libdemo2.so
+
+
+
+================================================
+
+$NDK_ROOT//build/core/build-local.mk-->$NDK_ROOT/build/core/setup-toolchain.mk
+
+$(call get-toolchain-root,$(NDK_ROOT)) ="/home/cat/Documents/ndk/android-ndk-r11c/toolchains/****llvm_name****/prebuilt/linux-x86_64"
+
+

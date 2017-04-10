@@ -1,0 +1,103 @@
+
+*********************  normal***************************
+cat@ubuntu:~/Documents/work/demo2$ ndk-build
+
+
+/home/cat/Documents/ndk/android-ndk-r11c/build/core/toolchains/arm-linux-androideabi-clang3.6/setup.mk:33: 
+
+" = ========== *tool ============= "
+/home/cat/Documents/ndk/android-ndk-r11c/build/core/toolchains/arm-linux-androideabi-clang3.6/setup.mk:36: " 
+
+LLVM_TOOLCHAIN_PREBUILT_ROOT /home/cat/Documents/ndk/android-ndk-r11c/toolchains/llvm/prebuilt/linux-x86_64 "
+
+/home/cat/Documents/ndk/android-ndk-r11c/build/core/toolchains/arm-linux-androideabi-clang3.6/setup.mk:39: 
+
+" LLVM_TOOLCHAIN_PREFIX /home/cat/Documents/ndk/android-ndk-r11c/toolchains/llvm/prebuilt/linux-x86_64/bin/ "
+
+/home/cat/Documents/ndk/android-ndk-r11c/build/core/toolchains/arm-linux-androideabi-clang3.6/setup.mk:41: 
+" = ======================= "
+
+/home/cat/Documents/ndk/android-ndk-r11c/build/core/toolchains/arm-linux-androideabi-clang3.6/setup.mk:52: 
+
+" = =======+++++++ target ================ "
+
+/home/cat/Documents/ndk/android-ndk-r11c/build/core/toolchains/arm-linux-androideabi-clang3.6/setup.mk:54: 
+
+" TARGET_CC /home/cat/Documents/ndk/android-ndk-r11c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang "
+
+/home/cat/Documents/ndk/android-ndk-r11c/build/core/toolchains/arm-linux-androideabi-clang3.6/setup.mk:56: 
+
+" TARGET_CXX /home/cat/Documents/ndk/android-ndk-r11c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ "
+
+/home/cat/Documents/ndk/android-ndk-r11c/build/core/toolchains/arm-linux-androideabi-clang3.6/
+
+
+
+
+
++++++++++++++++++++ndk r11c normal not my ollvm /bin /lib is not mine +++++++++++++++++++++++++
+
+setup.mk:33: " = ========== *tool ============= "
+/home/cat/Documents/ndk/android-ndk-r11c/build/core/toolchains/arm-linux-androideabi-clang3.6/
+
+setup.mk:36: " LLVM_TOOLCHAIN_PREBUILT_ROOT /home/cat/Documents/ndk/android-ndk-r11c/toolchains/llvm/prebuilt/linux-x86_64 "
+/home/cat/Documents/ndk/android-ndk-r11c/build/core/toolchains/arm-linux-androideabi-clang3.6/
+
+setup.mk:39: " LLVM_TOOLCHAIN_PREFIX /home/cat/Documents/ndk/android-ndk-r11c/toolchains/llvm/prebuilt/linux-x86_64/bin/ "
+/home/cat/Documents/ndk/android-ndk-r11c/build/core/toolchains/arm-linux-androideabi-clang3.6/
+
+setup.mk:41: " = ======================= "
+/home/cat/Documents/ndk/android-ndk-r11c/build/core/toolchains/arm-linux-androideabi-clang3.6/
+
+setup.mk:52: " = =======+++++++ target ================ "
+/home/cat/Documents/ndk/android-ndk-r11c/build/core/toolchains/arm-linux-androideabi-clang3.6/
+
+setup.mk:54: " TARGET_CC /home/cat/Documents/ndk/android-ndk-r11c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang "
+
+/home/cat/Documents/ndk/android-ndk-r11c/build/core/toolchains/arm-linux-androideabi-clang3.6/setup.mk:56: " TARGET_CXX /home/cat/Documents/ndk/android-ndk-r11c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ "
+
+[arm64-v8a] Compile        : demo2 <= demo2.c
+[arm64-v8a] SharedLibrary  : libdemo2.so
+[arm64-v8a] Install        : libdemo2.so => libs/arm64-v8a/libdemo2.so
+[x86_64] Compile        : demo2 <= demo2.c
+[x86_64] SharedLibrary  : libdemo2.so
+[x86_64] Install        : libdemo2.so => libs/x86_64/libdemo2.so
+[mips64] Compile        : demo2 <= demo2.c
+[mips64] SharedLibrary  : libdemo2.so
+[mips64] Install        : libdemo2.so => libs/mips64/libdemo2.so
+[armeabi-v7a] Compile arm    : demo2 <= demo2.c
+[armeabi-v7a] SharedLibrary  : libdemo2.so
+[armeabi-v7a] Install        : libdemo2.so => libs/armeabi-v7a/libdemo2.so
+[armeabi] Compile arm    : demo2 <= demo2.c
+[armeabi] SharedLibrary  : libdemo2.so
+[armeabi] Install        : libdemo2.so => libs/armeabi/libdemo2.so
+[x86] Compile        : demo2 <= demo2.c
+[x86] SharedLibrary  : libdemo2.so
+[x86] Install        : libdemo2.so => libs/x86/libdemo2.so
+[mips] Compile        : demo2 <= demo2.c
+[mips] SharedLibrary  : libdemo2.so
+
+
+
+************************ndk build process ******************************
+
+As usually ,  $NDK_ROOT -->/build/core/toolchains/xxxx-clang3.6/setuo.mk
+
+-->
+$NDK_ROOT/toolchains/llvm
+
+
+
+
+***********************2017.3.6   To solve myllvm build  arm64-v8a ****************************
+
+When I built arm64-v8a ,I got an error "Permission denid ", 
+"[arm64-v8a] Compile        : demo2 <= demo2.c
+make: execvp: /home/cat/Documents/ndk/android-ndk-r11c/toolchains/obfuscator-llvm: Permission denied
+", and now I had to fix it ,by the way , my ndk version is ndk r11c ,and there is something different between ndk r10e and ndk r11c.
+  however ,ndk r10e is working with all cpu by obfuscator-llvm & ndk r10e ,but ndk r11c was not working at all. That's makes me more confused these days. Oh , I'm not good at English ,:D
+
+
+
+
+
